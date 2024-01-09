@@ -21,32 +21,39 @@ function Sidenav() {
             <div className='sidenav_buttons'>
                 <button className='sidenav_button'> 
                     <HomeIcon/>
-                    <span>Home</span>
+                    <span> Home</span>
                 </button>
                 <button className='sidenav_button'> 
                     <SearchIcon/>
-                    <span>Search</span>
+                    <span> Search</span>
                 </button>
                 <button className='sidenav_button'> 
                     <ExploreIcon/>
-                    <span>Explore</span>
+                    <span> Explore</span>
                 </button>
                 <button className='sidenav_button'> 
                     <SlideshowIcon/>
-                    <span>Reels</span>
+                    <span> Reels</span>
                 </button>
                 <button className='sidenav_button'> 
                     <ChatIcon/>
-                    <span>Messages</span>
+                    <span> Messages</span>
                 </button>   
                 <button className='sidenav_button'> 
                     <FavoriteBorderIcon/>
-                    <span>Notifications</span>
+                    <span> Notifications</span>
                 </button>
                 <button className='sidenav_button'> 
                     <AddCircleOutlineIcon/>
-                    <span>Create</span>
+                    <span> Create</span>
                 </button>
+            </div>
+            <div className='sidenav_more'>
+                <button className='sidenav_button'>
+                    <MenuIcon/>
+                    <span> More</span>
+                </button>
+
             </div>
         </div>
     )
