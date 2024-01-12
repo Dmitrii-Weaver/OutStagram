@@ -28,10 +28,6 @@
     border: 0.6px solid rgba(128, 128, 128, 0.516);
 }
 
-.post_footer{
-
-}
-
 .post_footer_icons{
     display: flex;
     flex-direction: row;

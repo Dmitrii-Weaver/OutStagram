@@ -37,14 +37,16 @@ function Timeline() {
         <div className='timeline_posts'>
           {posts.map(post => (
             <Post
-              user={post.user} 
-              image={post.postImage} 
-              likes={post.likes} 
+              user={post.user}
+              image={post.postImage}
+              likes={post.likes}
               time={post.time} />
           ))}
         </div>
       </div>
-      <div children="timeline_right"><Suggestions /></div>
+      <div children="timeline_right">
+        <Suggestions />
+      </div>
     </div>
   )
 }
