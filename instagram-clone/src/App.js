@@ -8,7 +8,7 @@ import { auth } from './firebase';
 
 
 function App() {
-  
+
   const user = useSelector(state => state.data.user.user)
   const dispatch = useDispatch()
 
