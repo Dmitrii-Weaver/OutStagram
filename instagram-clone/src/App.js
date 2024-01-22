@@ -10,6 +10,7 @@ import { auth } from './firebase';
 function App() {
 
   const user = useSelector(state => state.data.user.user)
+  const isLoading = useSelector((state) => state.data.user.isLoading);
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -30,7 +31,13 @@ function App() {
 
   return (
     <div className="app">
-      {user ? (<Homepage />) : (<Authentification />)}
+      {isLoading ? (
+        <div class="loader-container">
+          <div class="loader"></div>
+        </div>
+      ) : (
+        <>{user ? <Homepage /> : <Authentification />}</>
+      )}
     </div>
   );
 }
